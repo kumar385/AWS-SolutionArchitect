@@ -12,6 +12,8 @@ S3 is object storage built to store and retrieve any amount of data from anywher
 * Object is a file
 * Arbitrary collection of bytes
 * S3 i key-value store
+* Subresources
+ -- Access Control Lists
 
 ## S3 Fundamentals:
 * Object-based storage
