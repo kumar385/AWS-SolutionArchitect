@@ -50,4 +50,7 @@ S3 is object storage built to store and retrieve any amount of data from anywher
 
 ## Glacier Description:
  Secure,durable and etremely low-cost cloud storage service for data archiving and long-term backup.
+ * Standard: 3-5 hours
+ * Expedited: 1-5 minutes
+ * Bulk : 5-12 hours
  
