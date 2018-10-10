@@ -23,7 +23,7 @@ S3 is object storage built to store and retrieve any amount of data from anywher
 * Files are stored in buckets
 * S3 has flat (universal) namespace - bucket names must be unique across all AWS accounts
 * Accessible via URL:
- -- https://<region>.amazonaws.com/<bucketname>
+ -- https://s3-<region>.amazonaws.com/<bucketname>
  -- Successful file upload returns HTTP 200 code
   
 ## S3 Data Consistency
@@ -43,14 +43,19 @@ S3 is object storage built to store and retrieve any amount of data from anywher
 * Security via Access Control Lists and Bucket Policies
 
 ## S3 Storage Tiers/Classes
-* Standard: 99.99% availability , 11 9's durability
-* Infrequent Access (IA): Data that is accessed less frequently, but required fast access when needed. Lower fee than standard, but a retrieval fee is chanrged. 99.99% availability and 11 9's durability
+* Standard: 99.99% availability , 11 9's durability, Minimum Storage Duration: N/A
+* Infrequent Access (IA): Data that is accessed less frequently, but required fast access when needed. Lower fee than standard, but a retrieval fee is chanrged. 99.99% availability and 11 9's durability. Minimum object size: 128 KB*, Minimum storage Duration: 30 days
 * Reduced Redundancy: Provides 99.99% availability and 99.99% durability. Lower fee than Standard
-* Glacier: Archival storage with very infrequent acces. Varying time for retrieval,but much longer than S3
+* Glacier: Archival storage with very infrequent acces. Varying time for retrieval,but much longer than S3. Minimum object size: N/A, minimum storage duration: 90 days,Durability : 11 9's, Availability: N/A
 
 ## Glacier Description:
  Secure,durable and etremely low-cost cloud storage service for data archiving and long-term backup.
  * Standard: 3-5 hours
  * Expedited: 1-5 minutes
  * Bulk : 5-12 hours
+ 
+ ## S3 Transfer Acceleration:
+ Enables fast,easy and secure transfer of files over long distance between your client and an S3 bucket, Transfer Acceleration takes advantage of Amazon Cloud Front's globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path.
+ 
+ # S3 Exam Tips:
  
